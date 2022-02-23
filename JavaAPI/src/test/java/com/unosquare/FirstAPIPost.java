@@ -3,7 +3,6 @@ package com.unosquare;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import files.ReUsableMethods;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -64,9 +63,27 @@ public class FirstAPIPost {
 	@Test
 	public void createPostJsonFileLogin() throws IOException, ParseException {
 		
-		ReUsableMethods.Api("..\\JavaAPI\\src\\test\\java\\json\\Register.json", "/api/login");
+		JSONParser json = new JSONParser();
+		FileReader reader = new FileReader("..\\JavaAPI\\src\\test\\java\\json\\Register.json");
+		Object obj = json.parse(reader);
+
+		RestAssured.baseURI = "https://reqres.in";
+		RequestSpecification httpRequest = RestAssured.given().log().uri();
+		httpRequest.headers("Content-Type", "application/json");
+		httpRequest.body(obj.toString());
+		Response response = httpRequest.post("/api/login");
+		Reporter.log("-- Test Post Login-Successful --");
+		Reporter.log("Body sent: "+obj.toString());
 		
+		//Get response code
+		int StatusCode = response.getStatusCode();
+		Reporter.log("Status code: "+String.valueOf(StatusCode));
+		
+		//Get response body
+		String body = response.getBody().asString();
+		Reporter.log("Body response: "+body);
 		
 	}
+	
 
 }

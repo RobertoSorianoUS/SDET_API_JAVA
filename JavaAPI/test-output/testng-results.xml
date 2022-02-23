@@ -5,8 +5,8 @@
       <![CDATA[{
     "name": "JohnAPI Test",
     "job": "QA",
-    "id": "868",
-    "createdAt": "2022-02-23T21:48:57.611Z"
+    "id": "376",
+    "createdAt": "2022-02-23T22:23:36.340Z"
 }]]>
     </line>
     <line>
@@ -34,24 +34,24 @@
       <![CDATA[Body response: {"id":4,"token":"QpwL5tke4Pnpja7X4"}]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-02-23T15:49:19 CST" name="Default suite" finished-at="2022-02-23T15:49:25 CST" duration-ms="5790">
+  <suite started-at="2022-02-23T16:23:58 CST" name="Default suite" finished-at="2022-02-23T16:24:03 CST" duration-ms="5562">
     <groups>
     </groups>
-    <test started-at="2022-02-23T15:49:19 CST" name="Default test" finished-at="2022-02-23T15:49:25 CST" duration-ms="5790">
-      <class name="com.unosquare.FirstAPIPost">
-        <test-method signature="createPost()[pri:0, instance:com.unosquare.FirstAPIPost@67080771]" started-at="2022-02-23T15:49:19 CST" name="createPost" finished-at="2022-02-23T15:49:23 CST" duration-ms="4088" status="PASS">
+    <test started-at="2022-02-23T16:23:58 CST" name="Default test" finished-at="2022-02-23T16:24:03 CST" duration-ms="5562">
+      <class name="com.unosquare.FirstAPIPostEnhancement">
+        <test-method signature="createPost()[pri:0, instance:com.unosquare.FirstAPIPostEnhancement@67080771]" started-at="2022-02-23T16:23:58 CST" name="createPost" finished-at="2022-02-23T16:24:02 CST" duration-ms="4319" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[{
     "name": "JohnAPI Test",
     "job": "QA",
-    "id": "868",
-    "createdAt": "2022-02-23T21:48:57.611Z"
+    "id": "376",
+    "createdAt": "2022-02-23T22:23:36.340Z"
 }]]>
             </line>
           </reporter-output>
         </test-method> <!-- createPost -->
-        <test-method signature="createPostJsonFileLogin()[pri:0, instance:com.unosquare.FirstAPIPost@67080771]" started-at="2022-02-23T15:49:23 CST" name="createPostJsonFileLogin" finished-at="2022-02-23T15:49:24 CST" duration-ms="914" status="PASS">
+        <test-method signature="createPostJsonFileLogin()[pri:0, instance:com.unosquare.FirstAPIPostEnhancement@67080771]" started-at="2022-02-23T16:24:02 CST" name="createPostJsonFileLogin" finished-at="2022-02-23T16:24:03 CST" duration-ms="639" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[-- Test --]]>
@@ -67,7 +67,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- createPostJsonFileLogin -->
-        <test-method signature="createPostJsonFileRegister()[pri:0, instance:com.unosquare.FirstAPIPost@67080771]" started-at="2022-02-23T15:49:24 CST" name="createPostJsonFileRegister" finished-at="2022-02-23T15:49:25 CST" duration-ms="699" status="PASS">
+        <test-method signature="createPostJsonFileRegister()[pri:0, instance:com.unosquare.FirstAPIPostEnhancement@67080771]" started-at="2022-02-23T16:24:03 CST" name="createPostJsonFileRegister" finished-at="2022-02-23T16:24:03 CST" duration-ms="519" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[-- Test Post Register-Successful --]]>
@@ -83,7 +83,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- createPostJsonFileRegister -->
-      </class> <!-- com.unosquare.FirstAPIPost -->
+      </class> <!-- com.unosquare.FirstAPIPostEnhancement -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

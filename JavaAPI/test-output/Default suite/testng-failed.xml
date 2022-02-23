@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.unosquare.FirstAPITest2">
+      <class name="com.unosquare.FirstAPIPost">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="f_Gherkin"/>
+          <include name="createPostJsonFile"/>
         </methods>
-      </class> <!-- com.unosquare.FirstAPITest2 -->
+      </class> <!-- com.unosquare.FirstAPIPost -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

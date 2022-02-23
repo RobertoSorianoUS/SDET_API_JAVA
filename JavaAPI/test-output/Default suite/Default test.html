@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 21 16:14:22 CST 2022</td>
+<td>Started on:</td><td>Wed Feb 23 16:23:58 CST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5580 ms)</td>
+<tr><td>Total time:</td><td>5 seconds (5562 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,30 +75,52 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.unosquare.FirstAPITest2.f()'><b>f</b><br>Test class: com.unosquare.FirstAPITest2<br/>
-<a href="#Output-632206764" onClick='toggleBox("Output-632206764", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.unosquare.FirstAPIPostEnhancement.createPostJsonFileLogin()'><b>createPostJsonFileLogin</b><br>Test class: com.unosquare.FirstAPIPostEnhancement<br/>
+<a href="#Output-1794489296" onClick='toggleBox("Output-1794489296", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-632206764" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-632206764">
-Sucess 200 validation<br/>
-{"data":{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>com.unosquare.FirstAPITest2@72cde7cc</td></tr>
-<tr>
-<td title='com.unosquare.FirstAPITest2.f_Gherkin()'><b>f_Gherkin</b><br>Test class: com.unosquare.FirstAPITest2<br/>
-<a href="#Output-1656059001" onClick='toggleBox("Output-1656059001", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1656059001" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1656059001">
-Sucess 200 validation<br/>
+<a href="#Output-1794489296" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1794489296">
+-- Test --<br/>
+Body sent: {"password":"pistol","email":"eve.holt@reqres.in"}<br/>
+Status code: 200<br/>
+Body response: {"token":"QpwL5tke4Pnpja7X4"}<br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>com.unosquare.FirstAPITest2@72cde7cc</td></tr>
+<td>com.unosquare.FirstAPIPostEnhancement@67080771</td></tr>
+<tr>
+<td title='com.unosquare.FirstAPIPostEnhancement.createPostJsonFileRegister()'><b>createPostJsonFileRegister</b><br>Test class: com.unosquare.FirstAPIPostEnhancement<br/>
+<a href="#Output-855277727" onClick='toggleBox("Output-855277727", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-855277727" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-855277727">
+-- Test Post Register-Successful --<br/>
+Body sent: {"password":"pistol","email":"eve.holt@reqres.in"}<br/>
+Status code: 200<br/>
+Body response: {"id":4,"token":"QpwL5tke4Pnpja7X4"}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.unosquare.FirstAPIPostEnhancement@67080771</td></tr>
+<tr>
+<td title='com.unosquare.FirstAPIPostEnhancement.createPost()'><b>createPost</b><br>Test class: com.unosquare.FirstAPIPostEnhancement<br/>
+<a href="#Output-763008902" onClick='toggleBox("Output-763008902", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-763008902" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-763008902">
+{
+    "name": "JohnAPI Test",
+    "job": "QA",
+    "id": "376",
+    "createdAt": "2022-02-23T22:23:36.340Z"
+}<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.unosquare.FirstAPIPostEnhancement@67080771</td></tr>
 </table><p>
 </body>
 </html>
