@@ -1,47 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Sucess 200 validation]]>
+      <![CDATA[{
+    "name": "JohnAPI Test",
+    "job": "QA",
+    "id": "868",
+    "createdAt": "2022-02-23T21:48:57.611Z"
+}]]>
     </line>
     <line>
-      <![CDATA[{"data":{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}]]>
+      <![CDATA[-- Test --]]>
     </line>
     <line>
-      <![CDATA[Sucess 200 validation]]>
+      <![CDATA[Body sent: {"password":"pistol","email":"eve.holt@reqres.in"}]]>
+    </line>
+    <line>
+      <![CDATA[Status code: 200]]>
+    </line>
+    <line>
+      <![CDATA[Body response: {"token":"QpwL5tke4Pnpja7X4"}]]>
+    </line>
+    <line>
+      <![CDATA[-- Test Post Register-Successful --]]>
+    </line>
+    <line>
+      <![CDATA[Body sent: {"password":"pistol","email":"eve.holt@reqres.in"}]]>
+    </line>
+    <line>
+      <![CDATA[Status code: 200]]>
+    </line>
+    <line>
+      <![CDATA[Body response: {"id":4,"token":"QpwL5tke4Pnpja7X4"}]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-02-21T16:14:22 CST" name="Default suite" finished-at="2022-02-21T16:14:27 CST" duration-ms="5580">
+  <suite started-at="2022-02-23T15:49:19 CST" name="Default suite" finished-at="2022-02-23T15:49:25 CST" duration-ms="5790">
     <groups>
     </groups>
-    <test started-at="2022-02-21T16:14:22 CST" name="Default test" finished-at="2022-02-21T16:14:27 CST" duration-ms="5580">
-      <class name="com.unosquare.FirstAPITest2">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.unosquare.FirstAPITest2@72cde7cc]" started-at="2022-02-21T16:14:22 CST" name="beforeMethod" finished-at="2022-02-21T16:14:22 CST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="f()[pri:0, instance:com.unosquare.FirstAPITest2@72cde7cc]" started-at="2022-02-21T16:14:22 CST" name="f" finished-at="2022-02-21T16:14:27 CST" duration-ms="4944" status="PASS">
+    <test started-at="2022-02-23T15:49:19 CST" name="Default test" finished-at="2022-02-23T15:49:25 CST" duration-ms="5790">
+      <class name="com.unosquare.FirstAPIPost">
+        <test-method signature="createPost()[pri:0, instance:com.unosquare.FirstAPIPost@67080771]" started-at="2022-02-23T15:49:19 CST" name="createPost" finished-at="2022-02-23T15:49:23 CST" duration-ms="4088" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Sucess 200 validation]]>
-            </line>
-            <line>
-              <![CDATA[{"data":{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}]]>
+              <![CDATA[{
+    "name": "JohnAPI Test",
+    "job": "QA",
+    "id": "868",
+    "createdAt": "2022-02-23T21:48:57.611Z"
+}]]>
             </line>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.unosquare.FirstAPITest2@72cde7cc]" started-at="2022-02-21T16:14:27 CST" name="beforeMethod" finished-at="2022-02-21T16:14:27 CST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="f_Gherkin()[pri:0, instance:com.unosquare.FirstAPITest2@72cde7cc]" started-at="2022-02-21T16:14:27 CST" name="f_Gherkin" finished-at="2022-02-21T16:14:27 CST" duration-ms="565" status="PASS">
+        </test-method> <!-- createPost -->
+        <test-method signature="createPostJsonFileLogin()[pri:0, instance:com.unosquare.FirstAPIPost@67080771]" started-at="2022-02-23T15:49:23 CST" name="createPostJsonFileLogin" finished-at="2022-02-23T15:49:24 CST" duration-ms="914" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Sucess 200 validation]]>
+              <![CDATA[-- Test --]]>
+            </line>
+            <line>
+              <![CDATA[Body sent: {"password":"pistol","email":"eve.holt@reqres.in"}]]>
+            </line>
+            <line>
+              <![CDATA[Status code: 200]]>
+            </line>
+            <line>
+              <![CDATA[Body response: {"token":"QpwL5tke4Pnpja7X4"}]]>
             </line>
           </reporter-output>
-        </test-method> <!-- f_Gherkin -->
-      </class> <!-- com.unosquare.FirstAPITest2 -->
+        </test-method> <!-- createPostJsonFileLogin -->
+        <test-method signature="createPostJsonFileRegister()[pri:0, instance:com.unosquare.FirstAPIPost@67080771]" started-at="2022-02-23T15:49:24 CST" name="createPostJsonFileRegister" finished-at="2022-02-23T15:49:25 CST" duration-ms="699" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[-- Test Post Register-Successful --]]>
+            </line>
+            <line>
+              <![CDATA[Body sent: {"password":"pistol","email":"eve.holt@reqres.in"}]]>
+            </line>
+            <line>
+              <![CDATA[Status code: 200]]>
+            </line>
+            <line>
+              <![CDATA[Body response: {"id":4,"token":"QpwL5tke4Pnpja7X4"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createPostJsonFileRegister -->
+      </class> <!-- com.unosquare.FirstAPIPost -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
