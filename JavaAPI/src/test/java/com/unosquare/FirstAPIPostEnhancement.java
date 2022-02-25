@@ -68,7 +68,7 @@ public class FirstAPIPostEnhancement {
 	@Test
 	public void createPostJsonFileLogin() throws IOException, ParseException {
 		
-		ReUsableMethods.Api("..\\JavaAPI\\src\\test\\java\\json\\Login.json", "/api/login");
+		ReUsableMethods.Api("..\\JavaAPI\\src\\test\\java\\json\\Login.json", "/api/login", 200);
 		
 	}
 	
