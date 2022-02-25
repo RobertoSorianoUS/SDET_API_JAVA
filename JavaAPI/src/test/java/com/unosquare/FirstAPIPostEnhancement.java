@@ -1,6 +1,8 @@
 package com.unosquare;
 
 import org.testng.Reporter;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import files.ReUsableMethods;
@@ -16,6 +18,8 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class FirstAPIPostEnhancement {
+	
+	ReUsableMethods apiCore;
 
 	@Test
 	public void createPost() {
@@ -64,7 +68,18 @@ public class FirstAPIPostEnhancement {
 	@Test
 	public void createPostJsonFileLogin() throws IOException, ParseException {
 		
-		ReUsableMethods.Api("..\\JavaAPI\\src\\test\\java\\json\\Register.json", "/api/login");
+		ReUsableMethods.Api("..\\JavaAPI\\src\\test\\java\\json\\Login.json", "/api/login");
+		
+	}
+	
+	@BeforeSuite
+	public void beforeSuite() {
+		
+		apiCore = new ReUsableMethods();
+	}
+	
+	@BeforeMethod
+	public void beforeMethod() {
 		
 	}
 
