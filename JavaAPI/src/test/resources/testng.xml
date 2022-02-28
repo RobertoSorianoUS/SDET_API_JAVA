@@ -4,6 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.unosquare.FirstAPITest"/>
+	  <class name="com.unosquare.FirstAPITest2"/>
+	  <class name="com.unosquare.FinalSuite"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
